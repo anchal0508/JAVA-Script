@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Display current time and Date</h1>
+  </body>
+</html>
+<script>
+  time = new Date();
+  dd = time.getDate(); // This is to display Date means only 15.
+  mm = time.getMonth();
+  months = [
+    "jan",
+    "feb",
+    "march",
+    "may",
+    "jun",
+    "july",
+    "aug",
+    "sep",
+    "oct",
+    "nov",
+    "Dec",
+  ];
+  yy = time.getFullYear();
+  document.writeln(dd + " /" + months[mm] + "/" + yy);
+  
+  // ====================  Time  is  ========================
+  
+  hh = time.getHours();
+  mm = time.getMinutes();
+  ss = time.getSeconds();
+  document.writeln("<br>"+hh + " : " + mm + " : " + ss);
+
+</script>
